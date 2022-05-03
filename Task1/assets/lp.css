@@ -1,0 +1,286 @@
+/* Style */
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #0b0c10; 
+    color: wheat ;
+}
+.contanier{
+    max-width: 100%;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    max-width: 1360px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 1px 0px; 
+}
+
+header a{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.logo {
+    height: 105px;
+    position: relative;
+    left: -40px;
+    top: -10px;
+}
+
+.logo:hover{
+    transform: translateY(-5px);
+    transition: all 1s ease 0s;
+}
+
+.menu{
+    position: relative;
+    top: -10px;
+    left:327px;
+}
+li,a{
+    font-weight: 20;
+    font-size: 20px;
+    text-decoration: none;
+    color: bisque;
+}
+
+nav ul li{
+    display: inline;
+    padding:0px 10px;
+}
+nav ul li a{
+    transition: all 0.3s ease 0s;
+}
+
+nav ul li a:hover{
+    color: #66fcf1;
+    transition: all 0.3s ease 0s;
+}
+
+button {
+    position: relative;
+    left: 470px;
+    padding: 0px 10px;
+    background-color:  bisque;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 1s ease 0s;
+    background-size: 200% auto;
+    height: 24px;
+    font-weight: 10px;
+}
+button a{
+    color: #0b0c10;
+    position:relative;
+    top:0;
+    left:0;
+}
+
+button:hover{
+    background-position: right center;
+    background-image: linear-gradient(to right, #45a29e 0%, #162f4e 51%, #1f2833 100%);
+    backdrop-filter: blur(.10px);
+    transition: all 1s ease 0s;
+}
+button a:hover{
+    color: bisque;
+    transition: all 0.7s ease 0s;
+}
+.LM{
+    position: relative;
+    top:50px;
+    left:-180px;
+}
+.LM a{
+    position:relative;
+    top:0;
+    left:0;
+    font-family: 'Bebas Neue', cursive;
+}
+/* WRAPPER */
+
+.wrapper {
+    background: url('./img/background2.jpg') no-repeat center center / cover;
+    height: 665px;
+    width:100%;
+    display: block;
+    position: relative;
+    z-index: 10;
+}
+
+.wrapper:before {
+    position: absolute;
+    content: '';
+    background-image: linear-gradient(to right, #000000 0%, rgba(48, 70, 94, 0.301) 51%, #00030ae5 100%);
+    opacity: 10%;
+    /* backdrop-filter: blur(1.5px); */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -6;
+}
+
+.content {
+    display:flex;
+    padding: 80px 210px;
+    justify-content: space-between;
+    color: white;
+    
+}
+
+.text p{
+    font-size: 24px;
+    font-family: 'Carter One', cursive;
+    margin: 30px 0;
+    font-weight: 400;
+    line-height: 2;
+    position: relative;
+    top:30px;
+    left:-100px;
+}
+
+.text small{
+    font-size: 20px;
+    font-family: 'Markazi Text', serif;
+    position: relative;
+    left: 330px;
+    top:10px;
+}
+
+.categories{
+    margin:70px 0;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 50px 25px;
+}
+
+.row{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-3{
+    flex-basis:30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    transition: transform 0.1s;
+    
+}
+
+.col-3 img{
+    width:100%;
+    border-radius: 5px;
+}
+
+.col-3:hover{
+    transform: translateY(-5px);
+    background-color: #00ff4c;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #ff4000;
+}
+
+.title::after{
+    content: '';
+    background: #00ff4c;
+    width: 200px;
+    height: 5px;
+    border-radius: 15px;
+    position:absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.about{
+    font-size: 20px;
+    font-family: 'Markazi Text', serif;
+    display: flex;
+    text-align: center;
+}
+
+.footer-left, .footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    left:-150px;
+    font-family: 'Markazi Text', serif;
+}
+
+.social-links{
+    position: relative;
+    padding: 16px;
+    top:-55px;
+    display: flex;
+    text-align: center;
+}
+
+.social-links ul {
+    list-style: none;
+    justify-content: space-between;
+    color: white;
+}
+
+.social-links ul li,a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Markazi Text', serif;
+    position: relative;
+    left:100px;
+    top:5px;
+}
+
+.address a{
+    left:0;
+    top:0;
+    display: flex;
+    text-align: center;
+}
+
+.contact1 a{
+    left:550px;
+    top:-110px;
+}
+
+.c{
+    background-color: black;
+}
+
+.social-links a:hover{
+    color:#00ff4c;
+    transition: all 1s ease 0s;
+}
+.contact1,.address a:hover{
+    color:#00ff4c;
+    transition: all 1s ease 0s;
+}
